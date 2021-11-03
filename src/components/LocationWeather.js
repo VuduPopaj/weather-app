@@ -1,6 +1,7 @@
 import React from "react";
 import { Button, Paper, Typography } from "@material-ui/core";
 
+
 function LocationWeather({ weather, list, setList, todo }) {
   const deleteHandler = () => {
     setList(list.filter((item) => item.id !== todo.id));
@@ -58,8 +59,8 @@ function LocationWeather({ weather, list, setList, todo }) {
             {weather.name},
             <img
               style={{ width: "20px", height: "20px", marginLeft: "10px" }}
-              src={`https://www.countryflags.io/${weather.sys.country}/flat/24.png`}
-              alt={weather.sys.country}
+              src={`http://purecatamphetamine.github.io/country-flag-icons/3x2/${weather.sys.country}.svg`}
+              alt="United States"
             />
             <Typography component={"span"} variant={"body1"} className="date">
               {dates(new Date())}
